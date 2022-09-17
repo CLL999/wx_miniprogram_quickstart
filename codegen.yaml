@@ -1,0 +1,30 @@
+generates:
+  ./src/graphql/api.d.ts:
+    schema: ./src/graphql/schema.graphql
+    documents: ./src/graphql/documents/api/**/*.graphql
+    plugins:
+      - add:
+          content:
+            - '/* eslint-disable */'
+            - 'declare namespace API {'
+      - add:
+          placement: 'append'
+          content: '}'
+      - typescript
+      - typescript-operations
+    config:
+      declarationKind: interface
+      maybeValue: T | null | undefined
+      inlineFragmentTypes: combine
+      enumsAsTypes: true
+      nonOptionalTypename: true
+  ./src/graphql/documents/api/index.ts:
+    schema: ./src/graphql/schema.graphql
+    documents: ./src/graphql/documents/api/**/*.graphql
+    plugins:
+      - add:
+          content:
+            - /* eslint-disable */
+      - typed-document-node
+    config:
+      typesPrefix: API.

@@ -1,0 +1,35 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "ignorePatterns": ["dist/"],
+  "extends": [
+    "plugin:vue/vue3-essential",
+    "@vue/eslint-config-standard-with-typescript",
+    // 关闭 eslint 中的格式规则，使用 prettier 来格式化代码
+    "prettier"
+  ],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "parser": "@typescript-eslint/parser",
+    "sourceType": "module"
+  },
+  "plugins": ["vue", "@typescript-eslint"],
+  "rules": {
+    "vue/block-lang": "off",
+    "vue/require-default-prop": "off",
+    "vue/multi-word-component-names": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/prefer-function-type": "off",
+    "@typescript-eslint/strict-boolean-expressions": "off",
+    "@typescript-eslint/promise-function-async": "off",
+    "@typescript-eslint/restrict-template-expressions": "off",
+    "@typescript-eslint/no-floating-promises": "off",
+    "@typescript-eslint/no-misused-promises": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "@typescript-eslint/naming-convention": "off",
+    "@typescript-eslint/method-signature-style": "off"
+  }
+}

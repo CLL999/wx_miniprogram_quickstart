@@ -1,0 +1,16 @@
+{
+  "pages": [
+    {
+      "path": "pages/index/index",
+      "style": {
+        "disableScroll": true
+      }
+    }
+  ],
+  "globalStyle": {
+    // "navigationStyle": "custom",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "Title",
+    "navigationBarBackgroundColor": "#ffffff"
+  }
+}

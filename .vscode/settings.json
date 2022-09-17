@@ -1,0 +1,47 @@
+{
+  "editor.rulers": [100],
+  "editor.formatOnSave": true,
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.expand": false,
+  "explorer.fileNesting.patterns": {
+    "package.json": ".npmrc, pnpm-lock.yaml, tsconfig.json, vite.config.ts, tailwind.config.cjs, apollo.config.js, codegen.yaml",
+    ".editorconfig": ".gitignore, .eslintrc.json, .prettierrc.json"
+  },
+
+  "files.associations": {
+    "*.wxml": "xml",
+    "*.wxs": "javascript",
+    "*.json": "jsonc"
+  },
+
+  "volar.completion.preferredTagNameCase": "kebab",
+
+  // 让 vscode 自动 import 时符合 prettier 的规则
+  "javascript.format.semicolons": "remove",
+  "typescript.format.semicolons": "remove",
+  "javascript.preferences.quoteStyle": "single",
+  "typescript.preferences.quoteStyle": "single",
+
+  "eslint.packageManager": "pnpm",
+  "eslint.format.enable": false,
+  "eslint.validate": ["javascript", "typescript", "vue"],
+
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[graphql]": {
+    "editor.defaultFormatter": null
+  }
+}
